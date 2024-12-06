@@ -13,3 +13,5 @@ public:
     return n;// If target is greater than all elements, return n
     }
 };
+Time Complexity: O(n)
+space complexity:O(1)
