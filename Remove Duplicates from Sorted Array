@@ -1,0 +1,18 @@
+class Solution {
+public:
+    int removeDuplicates(vector<int>& nums) {
+        int k=1;
+        for(int i=1;i<nums.size();i++){
+        if(nums[i]!=num[i-1]){
+        nums[i]=nums[k];
+        k++;
+    }
+        }
+        return k;
+    }
+};
+steps:
+first initialise k=1; means it is soretd and first element is not duplicate and array starts after this. 
+if previuos and present elements are not same it means element is unique, just save that element in k and increment k.
+return the array which stored in k.
+
