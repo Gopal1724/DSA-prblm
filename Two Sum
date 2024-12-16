@@ -1,0 +1,17 @@
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        int n=nums.size();
+        for(int i=0;i<n-1;i++){
+        for(int j=i+1;j<n;j++){
+        if(nums[i]+nums[j]==target){
+        return {i,j};
+        }
+        }
+        }
+    return {};
+    }
+};
+steps:
+we used two loops which starts from 0 and next after 0 where it searchs for target which is equals from i & j,if equals returns indexes of i ,j.
+and last returns.
