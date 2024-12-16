@@ -1,0 +1,29 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int t;
+    cin>>t;
+    while(t--){
+        int i,n;
+        cin>>n;
+        string s;
+        cin>>s;
+        for(int i=0;i<n;i+=2)//compares till two side by side numbers 
+        if(s[i]=='0'&&s[i+1]=='0')//if both numbers are 0 return A
+        cout<<'A';
+        else if(s[i]=='0'&&s[i+1]=='1')//if numbers are 0&1 return T
+        cout<<'T';
+        else if(s[i]=='1'&&s[i+1]=='0')//if numbers are 1&0 return 
+        cout<<'C';
+        else if(s[i]=='1'&&s[i+1]=='1')//if both numbers are 1 return G
+        cout<<'G';
+        cout<<endl;
+        
+    }
+return 0;
+}
+
+
+
+
